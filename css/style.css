@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Varela+Round');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*Start */
+body {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+	color: #56c5d0;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+header {
+	margin-bottom: 32px;
+}
+
+section {
+	min-height: 100px;
+	padding: 48px 16px;
+}
+
+footer {
+	background-color: #faa74a;
+	min-height: 32px;
+	padding: 16px;
+	text-align: center;
+}
+
+
+#container {
+	max-width: 319px;
+}
+
+.orange {
+	background-color: #faa74a;
+}
+.orange h1 {
+	color: #fff;
+}
+
+.grey {
+	background-color: #f3f3f3;
+	color: #56cdd0;
+}
+
+.grey img {
+	margin: 0 auto;
+	display: block;
+	width: 90%;
+}
+a {text-decoration: none;}
+
+a:link {color: #fff;}
+
+a:visited {color: #fff;}
+
+a:hover {color: #fff;
+		 background-color: #56c5d0;
+		 }
+.smallcolumn {
+	display: inline-block;
+	margin: 1%;
+	padding: 2%;
+	width: 94%;
+}
+
+.button {
+	border: 4px solid #fff;
+	padding: 7.5px 30px;
+
+}
+
+
+/******************************
+small smart phone to small tablet
+*******************************/
+
+@media only screen and (min-width: 320px) {
+
+h1{
+	font-size: 34px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+section {
+	min-height: 128px;
+}
+
+#container{
+	max-width: 767px;
+}
+.button{
+	padding: 15px 90px; 
+}
+
+}
+
+/******************************
+tablet to laptop/small screen desktop(768-1023px)
+*******************************/
+
+@media only screen and (min-width: 768px) {
+
+h1{
+	font-size: 80px;
+	text-align: center;
+}
+
+h2{
+	font-size: 28px;
+}
+
+p{
+	font-size: 18px;
+}
+
+#container {
+	max-width: 1023px;
+}
+
+.button{
+	padding: 15px 250px;
+	
+}
+
+.smallcolumn {
+	box-sizing: border-box;
+	margin: 5%;
+	padding: 4%;
+	width: 30%;
+}
+
+}
+/******************************
+laptop 1024px-1439px
+*******************************/
+@media only screen and (min-width: 1024px) {
+
+section{	
+	min-height: 280px;
+}
+#container {
+	max-width: 1439px;
+}
+.row {
+	width: 960px;
+	margin: 0 auto;
+}
+}
+/******************************
+laptop 1440px-1919px
+*******************************/
+@media only screen and (min-width: 1440px) {
+
+	h1 {font-size: 100px;}
+
+	h2{font-size: 45px;}
+
+	#container{
+		max-width: 1919px;
+	}
+	.button {
+		padding: 15px 350px;
+		margin: 100px;
+	}
+	.grey img {
+	margin: 0 auto;
+	display: block;
+	width: 50%;
+	}
+	.row {
+	width: 1100px;
+}
+}
+/******************************
+laptop 1920-2560
+*******************************/
+@media only screen and (min-width: 1920px) {
+	
+	section .orange {
+		min-height: 1000px;
+	}
+
+	#container {
+		min-width: 3000px;
+	}
+	.row {
+		width: 1920px;
+	}
+	.button
+	{
+		margin: 20px;
+	}
+}
